@@ -1,5 +1,5 @@
 <template>
-  <a-layout class="data-server-main-container">
+    <a-layout class="data-server-main-container">
         <a-layout-header class="header">
             <div class="logo" />
             <a-menu :default-selected-keys="selectedKeys1" theme="dark" mode="horizontal" :style="{ lineHeight: '64px' }">
@@ -9,12 +9,11 @@
         <router-view></router-view>
     </a-layout>
 </template>
-
 <script>
-export default {
-    components: {
-    },
-    data() {
+    export default {
+        components: {
+        },
+        data() {
             return {
                 selectedKeys1: ['2'],
                 selectedKeys2: ['1'],
@@ -22,15 +21,14 @@ export default {
                 openKeys: ['sub1'],
                 navList: [{
                     id: 'server',
-                    label: '服务'
+                    label: '河南省灌溉分区系统'
                 }]
             };
         },
-}
+    };
 </script>
-
 <style>
-.data-server-main-container.ant-layout {
+    .data-server-main-container.ant-layout {
         width: 100%;
         height: 100%;
     }

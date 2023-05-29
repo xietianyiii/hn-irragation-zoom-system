@@ -28,6 +28,11 @@ const components = [
     PublishedMapServerList
 ]
 
+// 告诉服务器去哪里找静态资源文件
+const path = require('path');
+app.use(express.static(path.join(__dirname, '/public')));
+
+
 const install = (Vue, options) => {
     components.forEach(component => {
         Vue.component(component.name, component)

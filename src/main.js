@@ -6,6 +6,9 @@ import router from './router'
 import Antd from 'ant-design-vue';
 import 'ant-design-vue/dist/antd.css';
 
+import * as echarts from 'echarts'  //引入echarts
+Vue.prototype.$echarts = echarts  //挂载在全局
+
 
 Vue.config.productionTip = false
 
